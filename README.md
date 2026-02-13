@@ -9,5 +9,5 @@ The site is updated every year.
 - **Lightweight JavaScript**
 
 ## Versions
-**v2.0 (2026)** - UI/UX improvements, gallery added, relationship time counter, archive of v1.0
-**v1.0 (2025)** - initial release
+- **v2.0 (2026)** - UI/UX improvements, gallery added, relationship time counter, archive of v1.0
+- **v1.0 (2025)** - initial release
