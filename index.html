@@ -1,63 +1,20 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mă placi?</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
     <body>
         <div>
-            <h1>Will you be my Valentine?</h1>
-            <button id="yes">OMG YES ILYSM!!!!!!!!</button>
-            <button id="no">No...</button>
-            <h3>(o sa fiu saddy daca zici nu)</h3>
+            <h1>Mă placi?</h1>
+            <button id="yes">DA</button>
+            <button id="no">Nu...</button>
+            <h3>(ar fi bine sa zici da)</h3>
+            <img src = "https://www.gifcen.com/wp-content/uploads/2025/02/valentines-day-gif-4.gif">
         </div>
-        <style>
-            body {
-                background-image: url('https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed; /* Keeps the image fixed */
-            }
-            div {
-                text-align: center;
-                vertical-align: middle;
-            }
-            #no {
-                position: absolute;
-                padding: 10px 20px;
-                font-size: 16px;
-                left: 48%;
-                top: 55%;
-                background-color: rgb(160, 27, 27);
-                color: white;
-            }
-            #yes {
-                position: absolute;
-                padding: 10px 20px;
-                font-size: 16px;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                background-color: green;
-                color: white;
-            }
-        </style>
-        <script>
-            document.getElementById("no").addEventListener("click", function() {
-                const button = this;
-                const maxWidth = window.innerWidth - button.offsetWidth;
-                const maxHeight = window.innerHeight - button.offsetHeight;
-
-                const randomX = Math.random() * maxWidth;
-                const randomY = Math.random() * maxHeight;
-
-                button.style.left = `${randomX}px`;
-                button.style.top = `${randomY}px`;
-                
-                const currentSize = parseFloat(window.getComputedStyle(yes).fontSize);
-                yes.style.fontSize = `${currentSize + 5}px`;
-                yes.style.padding = `${currentSize / 2 + 5}px ${currentSize + 10}px`; 
-            });
-            
-            document.getElementById("yes").addEventListener("click", function () {
-                window.location.href = "yes.html";
-            });
-        </script>
+        <script src="index.js"></script>
     </body>
 </html>

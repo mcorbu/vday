@@ -1,0 +1,84 @@
+ body {
+    background-image: url('https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif');
+    background-size: cover;
+    background-color: rgba(102, 5, 53, 0.5); /* Adds a semi-transparent overlay */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+    }
+.header {
+    text-align: center;
+    margin-top: 20px;
+    }
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    }
+.galerie img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.galerie img:hover {
+    transform: scale(1.07);
+}
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.nav {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 2; /* să fie deasupra imaginii */
+    pointer-events: auto;
+    padding: 10px;
+}
+.nav.left {
+    left: 20px;
+}
+.nav.right {
+    right: 20px;
+}
+.nav:hover {
+    color: #ccc;
+}
+h1 {
+    font-size: 30px;
+    font: 30px "Corben", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

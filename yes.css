@@ -1,0 +1,90 @@
+body {
+    background-image: url('https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif');
+    background-color: rgba(102, 5, 53, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+div {
+    text-align: center;
+    vertical-align: middle;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    font: 30px "Corben", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.corben-regular {
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.corben-bold {
+    font-family: "Corben", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.montserrat-regular {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#meniu {
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color : white;
+    position: absolute;
+    padding: 10px 20px;
+    font: 18px "Montserrat", serif;
+    font-weight: 700;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(207, 103, 190);
+}
+
+#meniu:hover {
+    background-color: rgb(255, 105, 180);
+}
+
+#counter {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+#afisare {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}

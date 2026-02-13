@@ -1,0 +1,105 @@
+body {
+                display: flex; justify-content: center; height: 100vh;
+                background-image: url('https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif');
+                background-color: rgba(102, 5, 53, 0.5); /* Adds a semi-transparent overlay */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed; /* Keeps the image fixed */
+                overflow: scroll;
+            }
+            div {
+                text-align: center;
+                vertical-align: middle;
+            }
+            #no {
+                position: absolute;
+                padding: 10px 20px;
+                left: 48%;
+                top: 55%;
+                background-color: rgb(160, 27, 27);
+                color: white;
+                border-radius: 40px;
+                font: 18px "Montserrat", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            #yes {
+                position: absolute;
+                padding: 10px 20px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: green;
+                color: white;
+                border-radius: 40px;
+                font: 18px "Montserrat", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            h1 {
+                margin-top: 20px;
+                font-size: 24px;
+                font: 30px "Corben", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            h3 { 
+                margin-top: 20px;
+                font-size: 18px;
+                font: 20px "Montserrat", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .corben-regular {
+                font-family: "Corben", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .corben-bold {
+                font-family: "Corben", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .montserrat-regular{
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                }
+                .montserrat-bold {
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                #yes, #no {
+                    cursor: pointer;
+                    border: none;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                }
+
+                #yes:hover {
+                    background-color: #2ecc71;
+                    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+                }
+
+                #no:hover {
+                    background-color: #c0392b;
+                    box-shadow: 0 6px 20px rgba(192, 57, 43, 0.4);
+                }
+
+                h1, h3 {
+                    color: white;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                }
+                
