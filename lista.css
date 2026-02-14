@@ -39,3 +39,61 @@
                 color: white;
                 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
             }
+            .corben-regular {
+                font-family: "Corben", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .montserrat-regular {
+                font-family: "Montserrat", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .corben-bold {
+                font-family: "Corben", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .montserrat-bold {
+                font-family: "Montserrat", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            /* Mobile First Approach */
+            @media (max-width: 768px) {
+                body {
+                    background-size: auto;
+                    overflow-y: scroll;
+                }
+                h1 {
+                    font-size: 20px;
+                    margin-top: 15px;
+                }
+                h2 {
+                    font-size: 16px;
+                }
+                ul {
+                    font-size: 14px;
+                    padding: 0 10px;
+                }
+                li {
+                    margin: 8px 0;
+                }
+            }
+
+            /* 21:9 ultra-wide screen optimization */
+            @media (aspect-ratio: 21 / 9) {
+                h1 {
+                    font-size: 36px;
+                }
+                h2 {
+                    font-size: 24px;
+                }
+                ul {
+                    font-size: 22px;
+                    padding: 0 20px;
+                }
+                li {
+                    margin: 12px 0;
+                }
+            }

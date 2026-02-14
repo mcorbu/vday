@@ -62,3 +62,33 @@ header p {
     font-size: 18px;
     opacity: 0.9;
 }
+
+/* Mobile First Approach */
+@media (max-width: 768px) { 
+    header {
+        padding: 20px 10px;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    #lista, #galerie, #oldindex, #index {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+/* 21:9 ultra-wide screen optimization */
+@media (aspect-ratio: 21 / 9) {
+    header h1 {
+        font-size: 64px;
+    }
+    header p {
+        font-size: 24px;
+    }
+    #lista, #galerie, #oldindex, #index {
+        padding: 20px 40px;
+        font-size: 24px;
+    }
+}

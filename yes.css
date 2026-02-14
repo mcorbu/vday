@@ -87,4 +87,66 @@ h1 {
     font-weight: bold;
     color: white;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 21:9 Ultra-wide Optimization */
+@media (aspect-ratio: 21 / 9) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+    
+    h1 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+    
+    #meniu {
+        font-size: 20px;
+        padding: 12px 25px;
+        top: 82%;
+    }
+    
+    #counter {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    
+    #afisare {
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+    }
+    
+    div {
+        padding: 15px;
+    }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    #meniu {
+        font-size: 16px;
+        padding: 8px 16px;
+        top: 75%;
+    }
+    
+    #counter {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+    
+    #afisare {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    div {
+        padding: 10px;
+    }
 }

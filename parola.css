@@ -1,0 +1,116 @@
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://img1.picmix.com/output/stamp/normal/2/0/5/6/316502_7f4ce.gif');
+            background-color: rgba(102, 5, 53, 0.5); /* Adds a semi-transparent overlay */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: scroll;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font: 30px "Corben", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            font: 16px "Montserrat", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(315deg, #667eea 0%, #764ba2 74%);
+            transition: 0.3s ease;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font: 16px "Montserrat", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        button:hover {
+            background: #764ba2;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        .corben-regular {
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .corben-bold {
+            font-family: "Corben", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .montserrat-regular {
+            font-family: "Montserrat", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .montserrat-bold {
+            font-family: "Montserrat", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        /* Mobile First Approach */
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                overflow: auto;
+            }
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            input {
+                font-size: 14px;
+                padding: 10px;
+            }
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+            .error {
+                font-size: 14px;
+            }
+        }
+        /* For ultra-wide screens */
+        @media (min-aspect-ratio: 21/9) {
+            .container {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
