@@ -9,5 +9,6 @@ The site is updated every year.
 - **Lightweight JavaScript**
 
 ## Versions
+- **v2.1 (2026)** - attempts at resolution optimisation for ultrawide screens and mobile phones, password-locked gallery for privacy reasons
 - **v2.0 (2026)** - UI/UX improvements, gallery added, relationship time counter, archive of v1.0
 - **v1.0 (2025)** - initial release
